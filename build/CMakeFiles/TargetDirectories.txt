@@ -1,4 +1,4 @@
-/Users/mattia.ortolani/Programmi/C++/calculator/build/CMakeFiles/tinyexpr.dir
-/Users/mattia.ortolani/Programmi/C++/calculator/build/CMakeFiles/calculator.dir
-/Users/mattia.ortolani/Programmi/C++/calculator/build/CMakeFiles/edit_cache.dir
-/Users/mattia.ortolani/Programmi/C++/calculator/build/CMakeFiles/rebuild_cache.dir
+/Users/mattia.ortolani/GitHub/calculator/build/CMakeFiles/tinyexpr.dir
+/Users/mattia.ortolani/GitHub/calculator/build/CMakeFiles/calculator.dir
+/Users/mattia.ortolani/GitHub/calculator/build/CMakeFiles/edit_cache.dir
+/Users/mattia.ortolani/GitHub/calculator/build/CMakeFiles/rebuild_cache.dir

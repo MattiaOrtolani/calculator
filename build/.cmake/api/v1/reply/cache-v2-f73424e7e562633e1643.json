@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "RelWithDebInfo"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/mattia.ortolani/Programmi/C++/calculator/build"
+			"value" : "/Users/mattia.ortolani/GitHub/calculator/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mattia.ortolani/Programmi/C++/calculator/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/mattia.ortolani/GitHub/calculator/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -535,7 +535,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/mattia.ortolani/PROGRAMMI/C++/calculator"
+			"value" : "/Users/mattia.ortolani/GitHub/calculator"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mattia.ortolani/Programmi/C++/calculator/build"
+			"value" : "/Users/mattia.ortolani/GitHub/calculator/build"
 		},
 		{
 			"name" : "calculator_IS_TOP_LEVEL",
@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mattia.ortolani/Programmi/C++/calculator"
+			"value" : "/Users/mattia.ortolani/GitHub/calculator"
 		},
 		{
 			"name" : "wxWidgets_CONFIG_EXECUTABLE",

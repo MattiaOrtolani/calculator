@@ -7,14 +7,14 @@
 
 # =============================================================================
 # Project: calculator
-# Configurations: Debug
+# Configurations: RelWithDebInfo
 # =============================================================================
 # =============================================================================
 
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__tinyexpr_Debug
+rule C_COMPILER__tinyexpr_RelWithDebInfo
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/clang $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__tinyexpr_Debug
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER__tinyexpr_Debug
+rule C_STATIC_LIBRARY_LINKER__tinyexpr_RelWithDebInfo
   command = $PRE_LINK && /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake -E touch $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
@@ -33,7 +33,7 @@ rule C_STATIC_LIBRARY_LINKER__tinyexpr_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__calculator_Debug
+rule CXX_COMPILER__calculator_RelWithDebInfo
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/clang++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -43,7 +43,7 @@ rule CXX_COMPILER__calculator_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__calculator_Debug
+rule CXX_EXECUTABLE_LINKER__calculator_RelWithDebInfo
   command = $PRE_LINK && /usr/bin/clang++ $FLAGS -Wl,-search_paths_first -Wl,-headerpad_max_install_names $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -61,7 +61,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --regenerate-during-build -S/Users/mattia.ortolani/Programmi/C++/calculator -B/Users/mattia.ortolani/Programmi/C++/calculator/build
+  command = /opt/homebrew/Cellar/cmake/3.25.1/bin/cmake --regenerate-during-build -S/Users/mattia.ortolani/GitHub/calculator -B/Users/mattia.ortolani/GitHub/calculator/build
   description = Re-running CMake...
   generator = 1
 
